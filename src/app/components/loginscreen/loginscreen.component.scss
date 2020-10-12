@@ -1,0 +1,14 @@
+:host {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	
+	.logincard {
+		width: 300px;
+		
+		.full-width {
+			width: 100%;
+		}
+	}
+}

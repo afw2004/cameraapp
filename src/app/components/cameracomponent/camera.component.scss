@@ -1,0 +1,39 @@
+@import '../../../constants.scss';
+
+:host {
+	display: inline-block;
+	position: relative;
+	
+	width: 100%;
+	
+	@media screen and (min-width: 768px) {
+		width: 50%;
+	}
+	
+	.cameracontent {
+		width: 100%;
+	}
+	
+	.mat-green {
+		background-color: green;
+	}
+
+	.info {
+		position: absolute;
+		background: white;
+		bottom: $halfgutter;
+		right: $halfgutter;
+		
+		.label {
+			display: inline-block;
+			margin-right: $halfgutter;
+		}
+		
+		.mat-mini-fab {
+			line-height: $gutter;
+			width: $gutter;
+			height: $gutter;
+		}
+	}
+
+}

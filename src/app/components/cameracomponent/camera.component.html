@@ -1,0 +1,10 @@
+<img class="cameracontent" src="{{item.img}}">
+<button mat-button class="info">
+	<div class="label">
+		<span *ngIf="item.pass">{{ 'pass' | translate }}</span>
+		<span *ngIf="!item.pass">{{ 'fail' | translate }}</span>
+	</div>
+	<a class="indicator" mat-mini-fab color="{{ item.pass ? 'green' : 'warn' }}">
+	</a>
+</button>
+
